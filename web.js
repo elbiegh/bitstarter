@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 var fs=require('fs');
 
-var docstring=fs.readFileSync('/home/ubuntu/bitstarter/index.html','utf-8');
+var docstring=fs.readFileSync('index.html','utf-8');
 
 
 app.get('/', function(request, response) {
