@@ -4,7 +4,12 @@ var app = express.createServer(express.logger());
 
 var fs=require('fs');
 
-var docstring=fs.readFileSync('index.html','utf-8');
+// As reauested in the homework
+
+var docstring = fs.readFileSync('index.html','utf-8').toString('utf-8');
+
+// easier
+// var docstring=fs.readFileSync('index.html','utf-8');
 
 
 app.get('/', function(request, response) {
